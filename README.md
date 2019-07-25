@@ -1,2 +1,2 @@
-# JAHAC
+# JaHac
 C++封装
