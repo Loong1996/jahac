@@ -7,9 +7,11 @@ SOURCES += \
     example/main.cpp \
     utility/convert.cpp \
     network/socket.cpp \
-    utility/arraysize.cpp
+    utility/arraysize.cpp \
+    utility/iddist.cpp
 
 HEADERS += \
     utility/convert.h \
     network/socket.h \
-    utility/arraysize.h
+    utility/arraysize.h \
+    utility/iddist.h

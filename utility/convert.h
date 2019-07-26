@@ -5,7 +5,6 @@
 #include <sstream>
 
 namespace jahac {
-
 namespace convert {
 
 
@@ -33,8 +32,6 @@ static T StringConvert(const std::string& str, const T& default_value)
 }
 
 
-}
-
-}
+}}
 
 #endif // JAHAC_UTILITY_CONVERT_H

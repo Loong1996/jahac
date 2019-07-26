@@ -4,7 +4,6 @@
 #include <cstddef>
 
 namespace jahac {
-
 namespace arraysize {
 
 
@@ -20,8 +19,6 @@ constexpr std::size_t ArraySize(T (&)[N]) noexcept
 }
 
 
-}
-
-}
+}}
 
 #endif // JAHAC_UTILITY_ARRAYSIZE_H

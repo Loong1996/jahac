@@ -1,9 +1,7 @@
 #ifndef JAHAC_NETWORK_SOCKET_H
 #define JAHAC_NETWORK_SOCKET_H
 
-
 namespace jahac {
-
 namespace convert {
 
 
@@ -14,8 +12,6 @@ public:
 };
 
 
-}
-
-}
+}}
 
 #endif // JAHAC_NETWORK_SOCKET_H
