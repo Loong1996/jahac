@@ -6,12 +6,20 @@ CONFIG -= qt
 SOURCES += \
     example/main.cpp \
     utility/convert.cpp \
-    network/socket.cpp \
     utility/arraysize.cpp \
-    utility/iddist.cpp
+    utility/iddist.cpp \
+    utility/define.cpp \
+    network/tcpsocket.cpp \
+    network/socketaddress.cpp \
+    network/socketaddressfactory.cpp
 
 HEADERS += \
     utility/convert.h \
-    network/socket.h \
     utility/arraysize.h \
-    utility/iddist.h
+    utility/iddist.h \
+    utility/define.h \
+    network/tcpsocket.h \
+    network/socketaddress.h \
+    network/socketaddressfactory.h
+
+LIBS += -lws2_32

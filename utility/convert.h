@@ -19,7 +19,7 @@ static T StringConvert(const std::string& str)
 }
 
 template<typename T>
-static T StringConvert(const std::string& str, const T& default_value)
+static T StringConvert(const std::string& str, const T& defaultValue)
 {
     T t;
     std::stringstream ss(str);
@@ -28,7 +28,7 @@ static T StringConvert(const std::string& str, const T& default_value)
         return t;
     }
 
-    return default_value;
+    return defaultValue;
 }
 
 
