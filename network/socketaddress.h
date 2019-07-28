@@ -7,7 +7,7 @@
 #include <winsock2.h>
 
 namespace jahac {
-namespace convert {
+namespace network {
 
 
 class CSocketAddress;
@@ -36,6 +36,8 @@ public:
     {
         memcpy(&sockAddr_, &sockAddr, sizeof(sockaddr));
     }
+
+    uint32_t GetSize() const { return sizeof(sockAddr_); }
 
 #if _WIN32
     uint32_t&       GetIP4Ref()       { return reinterpret_cast<uint32_t&>(this->GetSockAddrInRef().sin_addr.S_un.S_addr); }

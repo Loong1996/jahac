@@ -6,7 +6,7 @@
 #include <winsock2.h>
 
 namespace jahac {
-namespace convert {
+namespace network {
 
 
 class CTCPSocket;
@@ -17,13 +17,15 @@ class CTCPSocket
 {
     friend class CSocketUtil;
 public:
+    ~CTCPSocket();
+
     int Connect(const CSocketAddress& address);
-    int Bind(const CSocketAddress& toAddress);
-    int Listen(int log);
+    int Bind(const CSocketAddress& bindAddress);
+    int Listen(int backlog);
     TCP_SOCKET_SHARED_PTR Accept(CSocketAddress& fromAddress);
 
-    int64_t Send(const void* data, std::size_t len);
-    int64_t Receive(void* buffer, std::size_t len);
+    int32_t Send(const void* data, std::size_t len);
+    int32_t Receive(void* buffer, std::size_t len);
 
 private:
     CTCPSocket(const SOCKET socket) : socket_(socket) { }

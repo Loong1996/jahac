@@ -11,7 +11,8 @@ SOURCES += \
     utility/define.cpp \
     network/tcpsocket.cpp \
     network/socketaddress.cpp \
-    network/socketaddressfactory.cpp
+    network/socketaddressfactory.cpp \
+    network/socketutil.cpp
 
 HEADERS += \
     utility/convert.h \
@@ -20,6 +21,7 @@ HEADERS += \
     utility/define.h \
     network/tcpsocket.h \
     network/socketaddress.h \
-    network/socketaddressfactory.h
+    network/socketaddressfactory.h \
+    network/socketutil.h
 
 LIBS += -lws2_32

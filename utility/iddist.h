@@ -23,7 +23,7 @@ public:
     ~CIdDist() {}
 
     void RegisterId(const T id) { id > id_ ? id_ = id : 0; }
-    T    MallocId()             { return id_ == std::numeric_limits<T>::max()? 0 : ++id_; }
+    T    MallocId()             { return id_ == (std::numeric_limits<T>::max)()? 0 : ++id_; }
     void ResetId(const T id)    { id_ = id; }
     T    GetCurId()             { return id_; }
 

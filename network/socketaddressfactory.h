@@ -6,7 +6,7 @@
 #include "network/socketaddress.h"
 
 namespace jahac {
-namespace convert {
+namespace network {
 
 
 class CSocketAddressFactory
@@ -14,6 +14,7 @@ class CSocketAddressFactory
 public:
     static SOCKET_ADDRESS_SHARED_PTR CreateIPv4FromString(const std::string& address);
 };
+
 
 }}
 
